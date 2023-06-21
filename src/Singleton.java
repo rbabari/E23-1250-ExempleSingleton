@@ -1,6 +1,6 @@
 public class Singleton {
     private static Singleton instance;
-    private Singleton()
+    protected Singleton()
     {
         System.out.println("Initialisation de l'instance");
 

@@ -19,6 +19,24 @@ public class Main {
 
         }
 
+        // créer une instance de planet
+        // Planet p0 = new Planet(); on peut pas créer une planette ...
+
+        //Planet p1 = new Terre();
+        Planet terre = Terre.getInstance();
+        Planet mars = new Mars();
+
+        // Soleil S1 = new Soleil(); constructeur private dans un singleton
+
+        //Soleil soit un singleton
+
+        Soleil sol1 = Soleil.getInstance();
+        sol1.add(terre);
+        Soleil sol2 = Soleil.getInstance();
+        sol2.add(mars);
+        terre.getlisteDeSat().add(new Satellite("Lune"));
+        terre.getlisteDeSat().add(new Satellite("StationInternationale"));
+        System.out.println("...");
 
 
     }
