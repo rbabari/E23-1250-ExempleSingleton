@@ -5,6 +5,20 @@ public class Main {
 
         System.out.printf("Hello and welcome!");
 
+        Singleton s1 = Singleton.getInstance();
+
+        Singleton s2 = Singleton.getInstance();
+
+        // s1 et s2 son les mêmes
+        if(s1.equals(s2))
+        {
+            System.out.println("Meme objet");
+
+        }else{
+            System.out.println("Pas le même objet");
+
+        }
+
 
 
     }
